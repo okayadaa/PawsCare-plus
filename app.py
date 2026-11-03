@@ -330,9 +330,8 @@ with st.sidebar:
 
 show_header()
 st.markdown(
-    "Plan your pets' daily care. Add your pets and their tasks (walks, "
-    "feeding, medication, grooming). Includes veterinary guides for spay/neuter, dental, wound, and vaccination aftercare. PawsCare+ "
-    "builds a schedule that fits the hours you're available and warns you about overlapping tasks."
+    "Plan and handle your pets' daily care, plus your vet instructions and ensure aftercare guidance one question away."
+    "PawsCare+ builds a schedule that fits the hours you're available and warns you about overlapping tasks."
 )
 
 st.divider()
