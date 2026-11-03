@@ -150,13 +150,6 @@ def show_header() -> None:
 
 st.set_page_config(page_title="PawsCare+", page_icon="🐾", layout="centered")
 
-# ---------------------------------------------------------------------------
-# Who is using the app?
-#
-# With an [auth] section in secrets, people sign in with Google and each
-# account gets its own saved data. Without it (on your own computer), the app
-# runs in local mode: no sign-in, one shared user, saved to a SQLite file.
-# ---------------------------------------------------------------------------
 
 AUTH_ENABLED = has_secret_section("auth")
 
@@ -164,10 +157,8 @@ if AUTH_ENABLED:
     if not st.user.is_logged_in:
         show_header()
         st.markdown(
-            "Plan your pets' daily care. Add your pets and their tasks (walks, "
-            "feeding, medication, grooming), and PawsCare+ builds a schedule "
-            "that fits the hours you're available and warns you about "
-            "overlapping tasks."
+            "Plan and handle your pets' daily care, plus your vet instructions and ensure aftercare guidance one question away."
+            "PawsCare+ builds a schedule that fits the hours you're available and warns you about overlapping tasks."
         )
         st.button("Sign in with Google", type="primary", on_click=st.login)
         st.caption(
